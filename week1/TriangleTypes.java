@@ -38,5 +38,4 @@ public class TriangleTypes {
             System.out.println("TRIANGULO ISOSCELES");
         }
 	}
-
 }

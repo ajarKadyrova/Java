@@ -16,7 +16,6 @@ public class Grenais {
             System.out.println("Novo grenal (1-sim 2-nao)");
             f = input.nextInt();
         }
-        input.close();
         System.out.println(cnt + " grenais");
 		System.out.println("Inter:" + cntInter);
 		System.out.println("Gremio:" + cntGremio);

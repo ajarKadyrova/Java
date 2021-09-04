@@ -12,16 +12,17 @@ class PopulationIncrease {
             popB = input.nextInt();
             incA = input.nextDouble();
             incB = input.nextDouble();
+            cnt = 0;
             while(popA<=popB){
-                popA+=popA*(incA/100);
-                popB+=popB*(incB/100);
+                popA += (popA*incA)/100;
+                popB += (popB*incB)/100;
                 cnt++;
-                if(cnt>=100){
-                    System.out.println("Mais de 1 seculo.");
+                if(cnt>100){
                     break;
                 }
             }
-            System.out.println(cnt + " anos.");   
+            if(cnt > 100) System.out.println("Mais de 1 seculo.");
+            else System.out.println(cnt + " anos.");   
         }
         input.close();
     }
